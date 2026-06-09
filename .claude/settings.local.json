@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pkill -f \"npm install\")",
+      "Bash(curl -s -m 60 -o /tmp/next-test.tgz -w \"HTTP %{http_code}, %{size_download} byte dalam %{time_total}s \\(%{speed_download} B/s\\)\\\\n\" https://registry.npmjs.org/next/-/next-14.2.35.tgz)",
+      "Read(//tmp/**)",
+      "Bash(pkill -9 -f \"npm install\")",
+      "Bash(npm cache *)",
+      "Bash(break)",
+      "Bash(curl -s -m 10 -o /dev/null -w \"HTTP %{http_code} \\(redirect ke: %{redirect_url}\\)\\\\n\" http://localhost:3000)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pkill -f \"next-server\")",
+      "Bash(lsof -ti:3000)",
+      "Bash(npx prisma *)",
+      "Bash(node -e ' *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(rm -f cj.txt)",
+      "Bash(curl -s -c cj.txt -X POST http://localhost:3000/api/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"owner@weddingco.id\",\"password\":\"owner12345\"}' -w \"\\\\nHTTP %{http_code}\\\\n\")",
+      "Bash(curl -s -b cj.txt -X POST http://localhost:3000/api/projects -H \"Content-Type: application/json\" -d '{\"groomName\":\"Andi\",\"brideName\":\"Sari\",\"weddingDate\":\"2026-12-20\"}' -w \"\\\\nHTTP %{http_code}\\\\n\")",
+      "Bash(python3 -c \"import sys,json; lines=sys.stdin.read\\(\\).rsplit\\(chr\\(10\\),2\\); d=json.loads\\(lines[0]\\); print\\('groomName :',d.get\\('groomName'\\)\\); print\\('brideName :',d.get\\('brideName'\\)\\); print\\('coupleName:',d.get\\('coupleName'\\)\\); print\\(lines[1]\\)\")",
+      "Bash(curl -s -b cj.txt -X POST http://localhost:3000/api/projects -H \"Content-Type: application/json\" -d '{\"groomName\":\"Andi\",\"brideName\":\"\",\"weddingDate\":\"2026-12-20\"}' -w \" [HTTP %{http_code}]\\\\n\")",
+      "Bash(curl -s -b cj.txt -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:3000/projects)",
+      "Bash(curl -s -o /dev/null -w \"GET /paket -> HTTP %{http_code}\\\\n\" http://localhost:3000/paket)",
+      "Bash(curl -s http://localhost:3000/paket)"
+    ]
+  }
+}
