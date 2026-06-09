@@ -44,7 +44,7 @@ export default async function DashboardPage() {
       </header>
 
       <a
-        href="/paket"
+        href="/"
         target="_blank"
         rel="noopener noreferrer"
         className="group mb-8 flex items-center justify-between gap-4 rounded-2xl bg-botanical text-ivory p-5 shadow-card hover:bg-botanical-soft transition"

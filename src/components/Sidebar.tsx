@@ -69,7 +69,7 @@ export default function Sidebar({ name, role }: { name: string; role: string }) 
 
           <div className="my-2 border-t border-parchment/70" />
           <a
-            href="/paket"
+            href="/"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
