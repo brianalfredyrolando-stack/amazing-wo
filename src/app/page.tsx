@@ -93,7 +93,7 @@ export default async function HomePage() {
           </p>
           <a
             href="#paket"
-            className="mt-8 inline-block rounded-full bg-gold px-7 py-3 text-sm font-medium text-ivory shadow-card transition hover:opacity-90"
+            className="mt-8 inline-block rounded-full bg-sage px-7 py-3 text-sm font-medium text-botanical-dark shadow-card transition hover:opacity-90"
           >
             Lihat Pilihan Paket
           </a>
